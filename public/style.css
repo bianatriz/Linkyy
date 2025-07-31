@@ -1,0 +1,82 @@
+body{
+       /* background-color: aqua; */
+       background-image: url(/images/bg2.png);
+       /* background-size: cover; */
+       /* background-repeat: repeat; */
+       /* background-position: center center; */
+       height: 100%;
+       display:flex;
+       align-items: center;
+       flex-direction: column;
+       font-family: "Pixelify Sans", sans-serif;
+    }
+h1{
+    color: #fff;
+    margin: 5% 0% 1.5% 0%;
+}
+.container{
+        background-color: #fff;
+        padding: 20px;
+        display: flex;
+        width: 500px;
+        border-radius: 10px;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0.5%;
+}
+
+
+#Curt{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+.containerResultado {
+    background-color: #fff;
+    padding: 20px;
+    width: 500px;
+    border-radius: 10px;
+    margin-top: 0.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#urlCurta{
+    margin-right: 40px;
+}
+
+#urlLonga{
+    margin-left: 40px;
+}
+
+input{
+    padding: 7px;
+    border-radius: 25px 0px 0px 25px;
+    border: #111837 thin solid;
+    width: 60%;
+}
+
+.btn {
+    border-radius: 0px 25px 25px 0px;
+    padding: 7px;
+    border: #208444 2.5px solid;
+    background-color: #67A17C;
+    color: #fff;
+}
+
+.btnLimpar{
+    border-radius: 25px;
+    padding: 7px;
+    border: #842020 2.5px solid;
+    background-color: #a92929;
+    color: #fff;
+}
+
+form{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}

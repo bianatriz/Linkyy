@@ -1,0 +1,21 @@
+{
+  "name": "picklink",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "devStart": "nodemon server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "ejs": "^3.1.10",
+    "express": "^4.21.2",
+    "mongoose": "^8.16.4",
+    "shortid": "^2.2.17"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linky</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <h1>Linky - Encurtador de URL</h1>
+    <div class="container">
+        <h3>Cole a URL que deseja encurtar.</h3>
+        <form action="/shortUrls" method="POST" class="my-4 form-inline">
+            
+            <input required placeholder="url" type="url" name="fullUrl" id="fullUrl" class="form-control col mr-2" >
+            <button type="submit" class="btn">Encurtar</button>
+        </form>
+    </div>
+    <% if (showTable) { %>
+        <div class="containerResultado">
+            <% if (shortUrls.length > 0) { 
+                let lastUrl = shortUrls[shortUrls.length - 1]; %>
+                <div id="Curt">
+                    <p id="urlCurta">URL curta: <a href="<%= lastUrl.short %>" target="_blank"><%= lastUrl.short %></a></p>
+                    <p>Nº Clicks: <%= lastUrl.clicks %></p>
+                </div>
+                <p id="urlLonga">URL longa: <a href="<%= lastUrl.full %>" target="_blank"><%= lastUrl.full %></a></p>
+                <button onclick="window.location.href='/'" class="btnLimpar">Limpar</button>
+            <% } %>
+        </div>
+    <% } %>
+</body>
+</html>
